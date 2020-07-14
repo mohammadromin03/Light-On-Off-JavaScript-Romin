@@ -1,0 +1,99 @@
+
+.light-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img {
+	width: 138px;
+}
+button {
+    text-transform: capitalize;
+    border: none;
+    margin: 70px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: #fff;
+    transform: skewY(15deg);
+}
+.on {
+	background-color: green;
+}
+.off {
+	background-color: red;
+}
+button:focus {
+	outline: none;
+}
+
+
+.light-area:before {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    top: 75px;
+    left: 80px;
+    border-radius: 50%;
+    z-index: 9;
+}
+.light-area:after {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    top: 75px;
+    right: 185px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+button.on:hover {
+    background-color: #044a04;
+}
+button.off:hover {
+    background-color: #c30707;
+}
+
+body:before {
+    position: absolute;
+    content: "Mohammad Romin";
+    color: #000;
+    width: 100%;
+    height: 100px;
+    left: 50%;
+    top: 59px;
+    transform: translate(-50%);
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+span:before {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 5px;
+    height: 24px;
+    top: 75px;
+    left: 83px;
+    z-index: 9;
+    transform: skewX(125deg);
+}
+span:after {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 5px;
+    height: 24px;
+    top: 75px;
+    right: 197px;
+    z-index: 9;
+    transform: skewX(125deg);
+}
